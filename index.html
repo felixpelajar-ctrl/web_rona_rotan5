@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+    <script>
+    // Cek apakah user sudah login
+    if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = "login.html";
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rona Rotan - Katalog Eksklusif</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger" id="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="menu-overlay" id="menu-overlay">
+    <div class="menu-content">
+        <section class="menu-section">
+            <h3>Info Kontak</h3>
+            <div class="info-item"><strong>Nama:</strong> <p>Qori sandiaghani indo beyond</p></div>
+            <div class="info-item"><strong>Alamat:</strong> <p>Jl. marina permai III</p></div>
+            <div class="info-item"><strong>Jurusan:</strong> <p>rekayasa perangkat lunak</p></div>
+            <div class="info-item"><strong>Kelas:</strong> <p>X</p></div>
+            <div class="info-item"><strong>Instagram:</strong> <p><a href="#">@qory_ajaaa</a></p></div>
+        </section>
+
+        <hr>
+
+        <section class="menu-section">
+            <h3>Info Lebih Lanjut</h3>
+            <div class="info-item"><strong>Update:</strong> <p>Koleksi Kursi Terbaru 2024</p></div>
+            <div class="info-item"><strong>Jadwal:</strong> <p>Senin - Jumat (08:00 - 17:00)</p></div>
+            <div class="info-item"><strong>Hasil Update:</strong> <p>Stok Produk Tersedia</p></div>
+        </section>
+
+        <button id="close-menu">Kembali</button>
+    </div>
+</div>
+</body>
+<div id="cart-icon" class="cart-trigger">
+    🛒 <span id="count">0</span>
+</div>
+
+<div class="cart-overlay" id="cart-overlay">
+    <div class="cart-content">
+        <h2>Keranjang Saya</h2>
+        <hr>
+        
+        <div id="cart-items-list"></div>
+
+        <div class="cart-footer">
+            <div style="display:flex; justify-content:space-between; padding:15px 0; border-top:2px solid #eee;">
+                <strong>Total Pembayaran:</strong>
+                <span id="total-amount" style="color:#8B5E3C; font-weight:bold;">Rp 0</span>
+            </div>
+            <button id="whatsapp-btn" class="btn-checkout" style="width:100%; padding:12px; background:#25D366; color:white; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">
+                Chat WhatsApp (Checkout)
+            </button>
+            <button id="close-cart" style="width:100%; background:none; border:none; margin-top:10px; cursor:pointer; color:gray;">Kembali Belanja</button>
+        </div>
+    </div>
+</div>
+
+<body>
+    <header class="main-header">
+    <div class="logo-container">
+        <img src="img/LOGO_VEKTOR_CHARLEC FELIX.jpg" alt="Logo Rona Rotan" class="header-logo">
+        <h1 class="brand-name">Rona Rotan</h1>
+    </div>
+</header>
+
+    <main class="container">
+        <div class="product-grid" id="product-list">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rona Rotan - Estetika Anyaman Indonesia</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+
+    <a href="https://wa.me/6283116544838" class="floating-wa" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat WA">
+    <span>Tanya Rona Rotan</span>
+</a>
+
+<button id="theme-toggle" class="theme-btn">
+    <span id="theme-icon">🌙</span>
+</button>
+
+<div id="product-modal" class="modal-overlay">
+    <div class="modal-container">
+        <button class="close-modal" id="close-modal-btn">&times;</button>
+        <div id="modal-body"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
