@@ -38,7 +38,7 @@ export const products = [
         price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/product-Rona Ratan_3.webp" // Sesuaikan nama file
+        image: "img/Product-Rona Ratan_3.webp" // Sesuaikan nama file
     }, 
     { 
         id: 6, 
@@ -68,4 +68,5 @@ export const products = [
     // ... dst
 
 ];
+
 
