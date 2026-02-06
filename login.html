@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk | Rona Rotan</title>
+    <style>
+        :root {
+            --brown: #8B5E3C;
+            --cream: #fdf5e6;
+        }
+        body {
+            background: var(--cream);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h2 { color: var(--brown); margin-bottom: 10px; }
+        p { color: #666; font-size: 14px; margin-bottom: 25px; }
+        
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus { border-color: var(--brown); }
+        
+        button {
+            width: 100%;
+            padding: 13px;
+            background: var(--brown);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        button:hover { background: #6d4a2f; transform: translateY(-2px); }
+
+        .toggle-link {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #555;
+        }
+        .toggle-link span {
+            color: var(--brown);
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .msg { font-size: 12px; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="auth-box">
+        <h2 id="auth-title">Masuk ke Rona</h2>
+        <p id="auth-desc">Gunakan akun yang sudah terdaftar.</p>
+
+        <form id="auth-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" id="btn-submit">Masuk Sekarang</button>
+        </form>
+
+        <p id="error-msg" class="msg" style="color: red;"></p>
+        <p id="success-msg" class="msg" style="color: green;"></p>
+
+        <div class="toggle-link">
+            <span id="toggle-text">Belum punya akun? </span>
+            <span id="toggle-btn" onclick="switchMode()">Daftar Disini</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    let isLoginMode = true; // Status awal adalah Login
+
+    const authTitle = document.getElementById('auth-title');
+    const authDesc = document.getElementById('auth-desc');
+    const btnSubmit = document.getElementById('btn-submit');
+    const toggleBtn = document.getElementById('toggle-btn');
+    const toggleText = document.getElementById('toggle-text');
+    const errorMsg = document.getElementById('error-msg');
+    const successMsg = document.getElementById('success-msg');
+
+    // Fungsi ganti tampilan Daftar <-> Login
+    function switchMode() {
+        isLoginMode = !isLoginMode;
+        errorMsg.style.display = 'none';
+        successMsg.style.display = 'none';
+
+        if (isLoginMode) {
+            authTitle.innerText = "Masuk ke Rona";
+            authDesc.innerText = "Gunakan akun yang sudah terdaftar.";
+            btnSubmit.innerText = "Masuk Sekarang";
+            toggleText.innerText = "Belum punya akun? ";
+            toggleBtn.innerText = "Daftar Disini";
+        } else {
+            authTitle.innerText = "Buat Akun";
+            authDesc.innerText = "Daftar untuk mulai belanja rotan.";
+            btnSubmit.innerText = "Daftar Akun";
+            toggleText.innerText = "Sudah punya akun? ";
+            toggleBtn.innerText = "Login Disini";
+        }
+    }
+
+    document.getElementById('auth-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const user = document.getElementById('username').value;
+        const pass = document.getElementById('password').value;
+
+        // Ambil data user dari localStorage
+        const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
+
+        if (!isLoginMode) {
+            // LOGIKA DAFTAR
+            const userExists = storedUsers.find(u => u.username === user);
+            
+            if (userExists) {
+                errorMsg.innerText = "Username sudah terpakai!";
+                errorMsg.style.display = 'block';
+            } else {
+                storedUsers.push({ username: user, password: pass });
+                localStorage.setItem('users', JSON.stringify(storedUsers));
+                
+                // Beri pesan sukses & pindah ke Login
+                successMsg.innerText = "Pendaftaran Berhasil! Silakan Login.";
+                successMsg.style.display = 'block';
+                
+                // Reset form & pindah ke login setelah 1.5 detik
+                setTimeout(() => {
+                    document.getElementById('auth-form').reset();
+                    switchMode();
+                }, 1500);
+            }
+        } else {
+            // LOGIKA LOGIN
+            const validUser = storedUsers.find(u => u.username === user && u.password === pass);
+
+            if (validUser) {
+                sessionStorage.setItem('isLoggedIn', 'true');
+                sessionStorage.setItem('activeUser', user);
+                window.location.href = "index.html";
+            } else {
+                errorMsg.innerText = "Username atau Password salah!";
+                errorMsg.style.display = 'block';
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
