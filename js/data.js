@@ -6,7 +6,7 @@ export const products = [
         price: "Rp 150.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/product-Rona Rotan_1.jpg" // Sesuaikan nama file
+        image: "img/product-Rona Rotan_1.webp" // Sesuaikan nama file
     },
     { 
         id: 2, 
@@ -14,7 +14,7 @@ export const products = [
         price: "Rp 170.000", 
         seller: "Artisan Lokal", 
         detail: "Nuansa hangat...",
-        image: "img/Rona-Ratan_12.jpg"
+        image: "img/Rona-Ratan_12.webp"
     },
     { 
         id: 3, 
@@ -22,7 +22,7 @@ export const products = [
         price: "Rp 200.000", 
         seller: "Artisan Lokal", 
         detail: "Nuansa hangat...",
-        image: "img/Rona-Ratan_26.jpg"
+        image: "img/Rona-Ratan_26.webp"
     },
     { 
         id: 4, 
@@ -30,7 +30,7 @@ export const products = [
         price: "Rp 70.000", 
         seller: "Artisan Lokal", 
         detail: "Nuansa hangat...",
-        image: "img/Rona-Ratan_42.jpg"
+        image: "img/Rona-Ratan_42.webp"
     }, 
     { 
         id: 5, 
@@ -38,7 +38,7 @@ export const products = [
         price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/product-Rona Ratan_3.jpg" // Sesuaikan nama file
+        image: "img/product-Rona Ratan_3.webp" // Sesuaikan nama file
     }, 
     { 
         id: 6, 
@@ -46,7 +46,7 @@ export const products = [
         price: "Rp 500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_38.jpg" // Sesuaikan nama file
+        image: "img/Rona-Ratan_38.webp" // Sesuaikan nama file
     }, 
     { 
         id: 7, 
@@ -54,7 +54,7 @@ export const products = [
         price: "Rp 1.250.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_24.jpg" // Sesuaikan nama file
+        image: "img/Rona-Ratan_24.webp" // Sesuaikan nama file
     }, 
     { 
         id: 8, 
@@ -62,8 +62,9 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.jpg" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
     },
     
     // ... dst
+
 ];
