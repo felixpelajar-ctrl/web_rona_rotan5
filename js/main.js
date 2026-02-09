@@ -1,4 +1,3 @@
-// main.js
 import { products } from './data.js';
 import { createProductCard } from './render.js';
 import { showSkeletons } from './loader.js';
