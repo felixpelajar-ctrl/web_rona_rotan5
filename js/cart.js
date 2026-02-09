@@ -3,7 +3,6 @@ export let cartItems = [];
 export function addToCart(product) {
     cartItems.push(product);
     updateCartUI();
-    // Otomatis buka keranjang saat barang ditambah (opsional)
     document.getElementById('cart-overlay').classList.add('active');
 }
 
@@ -11,11 +10,7 @@ function updateCartUI() {
     const list = document.getElementById('cart-items-list');
     const countDisplay = document.getElementById('count');
     const totalDisplay = document.getElementById('total-amount');
-
-    // Update Angka di Ikon
     countDisplay.innerText = cartItems.length;
-
-    // Kosongkan list dulu sebelum diisi ulang
     list.innerHTML = '';
 
     if (cartItems.length === 0) {
@@ -35,7 +30,6 @@ function updateCartUI() {
     }
 }
 
-// Fungsi Buka Tutup
 export function initCartLogic() {
     const cartIcon = document.getElementById('cart-icon');
     const closeBtn = document.getElementById('close-cart');
@@ -43,4 +37,5 @@ export function initCartLogic() {
 
     cartIcon.addEventListener('click', () => overlay.classList.add('active'));
     closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+
 }
