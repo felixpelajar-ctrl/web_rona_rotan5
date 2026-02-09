@@ -91,7 +91,7 @@ export const products = [
       { 
         id: 12, 
         name: "alat-alat", 
-        price: "Rp 100.500.000", 
+        price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_13.webp" 
@@ -99,14 +99,14 @@ export const products = [
       { 
         id: 13, 
         name: "kain halus", 
-        price: "Rp 100.500.000", 
+        price: "Rp 100.500", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_14.webp"
     },  { 
         id: 14, 
         name: "tas gandeng", 
-        price: "Rp 100.500.000", 
+        price: "Rp 300.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_15.webp" 
@@ -114,7 +114,7 @@ export const products = [
       { 
         id: 15, 
         name: "penyimpanan serba guna", 
-        price: "Rp 100.500.000", 
+        price: "Rp 100.400", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_16.webp" 
@@ -122,13 +122,14 @@ export const products = [
       { 
         id: 16, 
         name: "tikar maraibai", 
-        price: "Rp 100.500.000", 
+        price: "Rp 10.000.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_20.webp" 
     },
   
 ];
+
 
 
 
