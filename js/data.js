@@ -94,7 +94,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" 
+        image: "img/Rona-Ratan_13.webp" 
     },
       { 
         id: 13, 
@@ -102,14 +102,14 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp"
+        image: "img/Rona-Ratan_14.webp"
     },  { 
         id: 14, 
         name: "topi legendaris", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" 
+        image: "img/Rona-Ratan_15.webp" 
     },
       { 
         id: 15, 
@@ -117,7 +117,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" 
+        image: "img/Rona-Ratan_16.webp" 
     },
       { 
         id: 16, 
@@ -129,6 +129,7 @@ export const products = [
     },
   
 ];
+
 
 
 
