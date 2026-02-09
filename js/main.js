@@ -6,7 +6,6 @@ import { showSkeletons } from './loader.js';
 const productList = document.getElementById('product-list');
 export let cartItems = [];
 
-// 1. Logika Menu (Hamburger)
 function initMenu() {
     const btnOpen = document.getElementById('hamburger-menu');
     const btnClose = document.getElementById('close-menu');
@@ -20,7 +19,6 @@ function initMenu() {
     }
 }
 
-// 2. Logika Keranjang & UI
 function updateCartUI() {
     const list = document.getElementById('cart-items-list');
     const countDisplay = document.getElementById('count');
@@ -74,7 +72,6 @@ function initWhatsAppCheckout() {
                 return;
             }
             const totalHarga = document.getElementById('total-amount').innerText;
-            // Buka modal konfirmasi dulu, bukan langsung ke WA
             openCheckoutModal(cartItems, totalHarga);
         });
     }
@@ -89,14 +86,13 @@ function initCartLogic() {
         cartIcon.addEventListener('click', () => cartOverlay.classList.add('active'));
     }
 
-    // PERBAIKAN: Tambahkan Event Listener
     if (closeCart && cartOverlay) {
         closeCart.addEventListener('click', () => {
             cartOverlay.classList.remove('active');
         });
     }
 }
-// 5. Logika Tema (Dark Mode)
+
 function initTheme() {
     const themeBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
@@ -122,7 +118,6 @@ function initTheme() {
     });
 }
 
-// 6. Inisialisasi Utama (Gabungan Skeleton)
 function init() {
     console.log("Aplikasi Rona Rotan Dimuat...");
     
@@ -133,10 +128,7 @@ function init() {
     updateCartUI(); 
     
     if (productList) {
-        // Tampilkan Skeleton dulu
         showSkeletons('product-list', 6);
-
-        // Render produk asli setelah delay 1 detik
         setTimeout(() => {
             productList.innerHTML = ''; 
             products.forEach(product => {
@@ -147,10 +139,8 @@ function init() {
     }
 }
 
-// Jalankan saat DOM siap
 document.addEventListener('DOMContentLoaded', init);
 
-// Global Function untuk tombol hapus
 window.removeFromCart = function(index) {
     cartItems.splice(index, 1);
     updateCartUI();
