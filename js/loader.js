@@ -1,5 +1,3 @@
-// js/loader.js
-
 export function showSkeletons(containerId, count = 6) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -17,4 +15,5 @@ export function showSkeletons(containerId, count = 6) {
         `;
         container.appendChild(skeleton);
     }
+
 }
