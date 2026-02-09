@@ -2,7 +2,7 @@ export function showSkeletons(containerId, count = 6) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    container.innerHTML = ''; // Bersihkan kontainer
+    container.innerHTML = ''; 
     
     for (let i = 0; i < count; i++) {
         const skeleton = document.createElement('div');
@@ -17,3 +17,4 @@ export function showSkeletons(containerId, count = 6) {
     }
 
 }
+
