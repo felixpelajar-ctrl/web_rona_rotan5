@@ -19,7 +19,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: var(--white);
     padding: 3rem 1rem;
@@ -36,7 +35,6 @@ header {
     display: inline-block;
 }
 
-/* Animasi Line Work di Judul */
 .logo-container h1::after {
     content: '';
     position: absolute;
@@ -52,7 +50,6 @@ header {
     width: 100%;
 }
 
-/* Grid System */
 .container {
     max-width: 1200px;
     margin: 40px auto;
@@ -65,7 +62,6 @@ header {
     gap: 30px;
 }
 
-/* Card Styling */
 .product-card {
     background: var(--white);
     border-radius: 12px;
@@ -158,7 +154,7 @@ footer {
 }
 
 .menu-section h3 {
-    color: #d4a373; /* Warna emas/rotan */
+    color: #d4a373; 
     font-size: 1.2rem;
     margin-bottom: 15px;
     border-bottom: 1px solid #555;
@@ -187,9 +183,8 @@ hr {
     margin: 20px 0;
 }
 
-/* Container Utama Tombol Hamburger */
 .hamburger {
-    position: fixed; /* Biar tetap di pojok meski di-scroll */
+    position: fixed; 
     top: 20px;
     left: 20px;
     width: 35px;
@@ -198,49 +193,46 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 9999; /* Pastikan di atas semua elemen */
+    z-index: 9999; 
     background: transparent;
     padding: 0;
     border: none;
 }
 
-/* Membuat 3 Garis Fisik */
 .hamburger span {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #8B5E3C; /* Warna Cokelat Rotan */
+    background-color: #8B5E3C;
     border-radius: 4px;
     transition: 0.3s;
 }
 
-/* Sembunyikan Overlay Data secara default */
 .menu-overlay {
     position: fixed;
     top: 0;
-    left: -100%; /* Tersembunyi di kiri */
+    left: -100%;
     width: 300px;
     height: 100%;
-    background: #3E2723; /* Cokelat Gelap */
+    background: #3E2723; 
     color: white;
     z-index: 10000;
-    transition: 0.4s ease; /* Efek geser */
+    transition: 0.4s ease; 
     padding: 60px 20px;
     box-shadow: 5px 0 15px rgba(0,0,0,0.5);
     overflow-y: auto;
 }
 
-/* Saat Menu Aktif (Dipicu JS) */
+
 .menu-overlay.active {
-    left: 0; /* Muncul ke layar */
+    left: 0; 
 }
 
-/* Styling Data di dalam Menu */
+
 .menu-section { margin-bottom: 20px; }
 .menu-section h3 { color: #D2B48C; border-bottom: 1px solid #555; margin-bottom: 10px; }
 .info-item { margin-bottom: 8px; font-size: 14px; }
 
-/* Ikon Keranjang */
 .cart-trigger {
     position: fixed;
     top: 20px;
@@ -254,11 +246,10 @@ hr {
     font-weight: bold;
 }
 
-/* Overlay Keranjang Kanan */
 .cart-overlay {
     position: fixed;
     top: 0;
-    right: -100%; /* Sembunyi di kanan luar layar */
+    right: -100%; 
     width: 350px;
     height: 100%;
     background: white;
@@ -271,7 +262,7 @@ hr {
 }
 
 .cart-overlay.active {
-    right: 0; /* Muncul ke layar */
+    right: 0; 
 }
 
 #cart-items-list {
@@ -280,7 +271,6 @@ hr {
     margin-top: 20px;
 }
 
-/* Item di dalam keranjang */
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -307,47 +297,42 @@ hr {
 
 .main-header {
     padding: 20px 0;
-    background-color: #fff; /* Atau warna tema kamu */
+    background-color: #fff; 
     text-align: center;
 }
 
 .logo-container {
     display: flex;
-    flex-direction: column; /* Ini yang membuat logo di atas tulisan */
-    align-items: center;    /* Ini yang membuat semuanya di tengah */
-    gap: 10px;              /* Jarak antara logo dan tulisan */
-}
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;             
 
 .header-logo {
-    width: 100px;            /* Atur ukuran lebar logo */
-    height: auto;           /* Menjaga proporsi logo */
-    border-radius: 50%;     /* Tambahkan ini jika logomu ingin bulat */
+    width: 100px;            
+    height: auto;         
+    border-radius: 50%;    
 }
 
 .brand-name {
-    font-family: 'Playfair Display', serif; /* Sesuaikan font kamu */
+    font-family: 'Playfair Display', serif;
     font-size: 24px;
     margin: 0;
-    color: #8B5E3C;         /* Warna cokelat khas rotan */
+    color: #8B5E3C;         
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-/* Keadaan awal logo */
 .header-logo {
     width: 80px;
     height: auto;
-    transition: all 0.4s ease; /* Biar animasinya mulus */
+    transition: all 0.4s ease; 
     cursor: pointer;
-    /* Memberikan sedikit filter agar logo terlihat tajam di awal */
     filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
 }
 
-/* Efek saat mouse menyentuh logo */
-.header-logo:hover {
-    /* Memperbesar 2x lipat */
+
+.header-logo:hover { 
     transform: scale(2); 
-    /* Pastikan logo di atas elemen lain saat membesar */
     z-index: 999;
     position: relative;
 }
@@ -367,12 +352,12 @@ hr {
     font-weight: bold;
     font-size: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    z-index: 9999; /* Sangat tinggi agar tidak tertutup apapun */
+    z-index: 9999; 
     transition: transform 0.3s ease;
 }
 
 .floating-wa:hover {
-    transform: scale(1.1); /* Sedikit membesar saat disentuh */
+    transform: scale(1.1); 
 }
 
 .floating-wa img {
@@ -380,7 +365,7 @@ hr {
     height: 25px;
 }
 
-/* Hilangkan teks di layar HP kecil agar hanya icon saja */
+
 @media (max-width: 480px) {
     .floating-wa span {
         display: none;
@@ -390,28 +375,28 @@ hr {
     }
 }
 
-/* Warna Default (Light Mode) */
+
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
     --card-bg: #f9f9f9;
-    --accent-color: #8B5E3C; /* Cokelat Rotan */
+    --accent-color: #8B5E3C; 
     --header-bg: #ffffff;
 }
 
-/* Warna saat Dark Mode aktif */
+
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #f5f5f5;
     --card-bg: #2d2d2d;
     --header-bg: #121212;
-    --accent-color: #d4a373; /* Warna rotan lebih terang agar kontras */
+    --accent-color: #d4a373; 
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background 0.3s, color 0.3s; /* Animasi halus saat ganti mode */
+    transition: background 0.3s, color 0.3s; 
 }
 
 .product-card {
@@ -420,8 +405,6 @@ body {
 
 .theme-btn {
     position: fixed;
-    /* Sesuaikan 'top' ini agar berada di bawah keranjang */
-    /* Jika keranjang ada di top: 20px, maka set ini ke 70px atau 80px */
     top: 80px; 
     right: 20px; 
     
@@ -445,7 +428,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Pastikan ikon keranjang kamu juga punya posisi yang sinkron */
 #cart-icon {
     position: fixed;
     top: 20px;
@@ -495,7 +477,7 @@ body {
 }
 
 .modal-btn-buy:hover {
-    filter: brightness(1.2); /* Membuat warna sedikit lebih terang saat disentuh */
+    filter: brightness(1.2);
     transform: translateY(-2px);
 }
 
@@ -548,7 +530,7 @@ body {
 .btn-confirm {
     width: 100%;
     padding: 12px;
-    background: #25d366; /* Hijau WA */
+    background: #25d366;
     color: white;
     border: none;
     border-radius: 8px;
@@ -564,4 +546,5 @@ body {
     color: gray;
     cursor: pointer;
 }
+
 
