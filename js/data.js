@@ -66,24 +66,24 @@ export const products = [
     },
       { 
         id: 9, 
-        name: "topi legendari", 
-        price: "Rp 100.500.000", 
+        name: "sarung kasur", 
+        price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_4.webp" 
     },
       { 
         id: 10, 
-        name: "topi legendaris", 
-        price: "Rp 100.500.000", 
+        name: "payung pantai", 
+        price: "Rp 900.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_5.webp"
     },
       { 
         id: 11, 
-        name: "topi legendaris", 
-        price: "Rp 100.500.000", 
+        name: "nampan gacor king", 
+        price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_6.webp" 
@@ -129,6 +129,7 @@ export const products = [
     },
   
 ];
+
 
 
 
