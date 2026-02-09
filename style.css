@@ -633,6 +633,45 @@ body {
     transform: translateY(-3px);
 }
 
+/* --- GAYA UNTUK SOSIAL MEDIA --- */
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar ikon */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--bg-color); /* Latar belakang krem muda */
+    border: 1px solid var(--primary-brown);
+    border-radius: 50%; /* Membuat lingkaran */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 1.2rem;
+    color: var(--primary-brown); /* Warna ikon cokelat */
+    transition: color 0.3s;
+}
+
+/* Efek saat mouse diarahkan (Hover) */
+.social-icon:hover {
+    background-color: var(--primary-brown);
+    transform: translateY(-5px); /* Ikon naik sedikit */
+    box-shadow: 0 5px 15px rgba(139, 94, 60, 0.3);
+}
+
+.social-icon:hover i {
+    color: var(--white); /* Ikon berubah jadi putih */
+}
+
+
 
 
 
