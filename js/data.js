@@ -121,7 +121,7 @@ export const products = [
     },
       { 
         id: 16, 
-        name: "topeng", 
+        name: "tikar maraibai", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
@@ -129,6 +129,7 @@ export const products = [
     },
   
 ];
+
 
 
 
