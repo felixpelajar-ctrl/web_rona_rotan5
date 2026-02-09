@@ -80,7 +80,6 @@ function initWhatsAppCheckout() {
     }
 }
 
-// 4. Logika Tampilan Keranjang (Open/Close)
 function initCartLogic() {
     const cartIcon = document.getElementById('cart-icon');
     const closeCart = document.getElementById('close-cart');
@@ -89,13 +88,13 @@ function initCartLogic() {
     if (cartIcon && cartOverlay) {
         cartIcon.addEventListener('click', () => cartOverlay.classList.add('active'));
     }
-   // PERBAIKAN: Tambahkan Event Listener
+
+    // PERBAIKAN: Tambahkan Event Listener
     if (closeCart && cartOverlay) {
         closeCart.addEventListener('click', () => {
-            cartOverlay.classList.remove('active');// Perbaikan logic close
+            cartOverlay.classList.remove('active');
     }
 }
-
 // 5. Logika Tema (Dark Mode)
 function initTheme() {
     const themeBtn = document.getElementById('theme-toggle');
