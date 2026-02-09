@@ -93,6 +93,7 @@ function initCartLogic() {
     if (closeCart && cartOverlay) {
         closeCart.addEventListener('click', () => {
             cartOverlay.classList.remove('active');
+        });
     }
 }
 // 5. Logika Tema (Dark Mode)
