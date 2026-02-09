@@ -90,7 +90,7 @@ export const products = [
     },
       { 
         id: 12, 
-        name: "topi legendaris", 
+        name: "alat-alat", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
@@ -98,14 +98,14 @@ export const products = [
     },
       { 
         id: 13, 
-        name: "topi legendaris", 
+        name: "kain halus", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_14.webp"
     },  { 
         id: 14, 
-        name: "topi legendaris", 
+        name: "tas gandeng", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
@@ -113,7 +113,7 @@ export const products = [
     },
       { 
         id: 15, 
-        name: "topi legendaris", 
+        name: "penyimpanan serba guna", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
@@ -121,14 +121,15 @@ export const products = [
     },
       { 
         id: 16, 
-        name: "topi legendaris", 
+        name: "topeng", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" 
+        image: "img/Rona-Ratan_20.webp" 
     },
   
 ];
+
 
 
 
