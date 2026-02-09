@@ -6,7 +6,7 @@ export const products = [
         price: "Rp 150.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Product-Rona Rotan_1.webp" // Sesuaikan nama file
+        image: "img/Product-Rona Rotan_1.webp"
     },
     { 
         id: 2, 
@@ -38,7 +38,7 @@ export const products = [
         price: "Rp 100.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Product-Rona Ratan_3.webp" // Sesuaikan nama file
+        image: "img/Product-Rona Ratan_3.webp" 
     }, 
     { 
         id: 6, 
@@ -46,7 +46,7 @@ export const products = [
         price: "Rp 500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_38.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_38.webp" 
     }, 
     { 
         id: 7, 
@@ -54,7 +54,7 @@ export const products = [
         price: "Rp 1.250.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_24.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_24.webp" 
     }, 
     { 
         id: 8, 
@@ -62,7 +62,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 9, 
@@ -70,7 +70,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 10, 
@@ -78,7 +78,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp"
     },
       { 
         id: 11, 
@@ -86,7 +86,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 12, 
@@ -94,7 +94,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 13, 
@@ -102,14 +102,14 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp"
     },  { 
         id: 14, 
         name: "topi legendaris", 
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 15, 
@@ -117,7 +117,7 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
       { 
         id: 16, 
@@ -125,11 +125,11 @@ export const products = [
         price: "Rp 100.500.000", 
         seller: "Rona Workshop", 
         detail: "Rotan alami...",
-        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+        image: "img/Rona-Ratan_11.webp" 
     },
-    // ... dst
-
+  
 ];
+
 
 
 
