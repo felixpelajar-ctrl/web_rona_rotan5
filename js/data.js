@@ -64,9 +64,72 @@ export const products = [
         detail: "Rotan alami...",
         image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
     },
-    
+      { 
+        id: 9, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 10, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 11, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 12, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 13, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },  { 
+        id: 14, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 15, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
+      { 
+        id: 16, 
+        name: "topi legendaris", 
+        price: "Rp 100.500.000", 
+        seller: "Rona Workshop", 
+        detail: "Rotan alami...",
+        image: "img/Rona-Ratan_11.webp" // Sesuaikan nama file
+    },
     // ... dst
 
 ];
+
 
 
