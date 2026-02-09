@@ -1,7 +1,4 @@
-// js/checkout.js
-
 export function openCheckoutModal(cartItems, totalPrice) {
-    // Buat overlay modal checkout secara dinamis
     const checkoutOverlay = document.createElement('div');
     checkoutOverlay.id = 'checkout-modal';
     checkoutOverlay.className = 'modal-overlay show';
@@ -31,8 +28,6 @@ export function openCheckoutModal(cartItems, totalPrice) {
     `;
 
     document.body.appendChild(checkoutOverlay);
-
-    // Logika pengiriman
     const form = document.getElementById('checkout-form');
     form.onsubmit = (e) => {
         e.preventDefault();
@@ -62,4 +57,5 @@ function sendToWhatsApp(name, address, shipping, items, total) {
     const nomorWA = "6283116544838";
     const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
     window.open(url, '_blank');
+
 }
