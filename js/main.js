@@ -89,8 +89,10 @@ function initCartLogic() {
     if (cartIcon && cartOverlay) {
         cartIcon.addEventListener('click', () => cartOverlay.classList.add('active'));
     }
+   // PERBAIKAN: Tambahkan Event Listener
     if (closeCart && cartOverlay) {
-        cartOverlay.classList.remove('active'); // Perbaikan logic close
+        closeCart.addEventListener('click', () => {
+            cartOverlay.classList.remove('active');// Perbaikan logic close
     }
 }
 
