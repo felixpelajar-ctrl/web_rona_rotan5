@@ -1,9 +1,4 @@
-// js/modal.js
-
-// js/modal.js
-
-// js/modal.js
-import { addToCart } from './main.js'; // Import agar bisa dipanggil langsung
+import { addToCart } from './main.js';
 
 export function openModal(product) {
     const modal = document.getElementById('product-modal');
@@ -30,29 +25,23 @@ export function openModal(product) {
     `;
 
     modal.classList.add('show');
-
-    // --- SEMUA LOGIKA HARUS DI DALAM FUNGSI openModal ---
-
-    // 1. Tombol X
     const closeBtn = document.getElementById('close-modal-btn');
     if (closeBtn) {
         closeBtn.onclick = () => closeModal();
     }
-
-    // 2. Klik di luar area putih (Overlay)
+    
     modal.onclick = (e) => {
         if (e.target === modal) closeModal();
     };
 
-    // 3. Tombol Beli di dalam Modal
     const modalBuyBtn = document.getElementById('modal-add-to-cart');
     if (modalBuyBtn) {
         modalBuyBtn.onclick = () => {
-            addToCart(product); // Panggil fungsi dari main.js
+            addToCart(product); 
             closeModal();
         };
     }
-} // <--- Penutup fungsi openModal
+} 
 
 export function closeModal() {
     const modal = document.getElementById('product-modal');
