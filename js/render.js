@@ -5,8 +5,15 @@ export function createProductCard(product) {
     const card = document.createElement('article');
     card.className = 'product-card';
     card.innerHTML = `
-        <div class="product-image">
-            <img src="${product.image}" alt="${product.name}" class="clickable-img" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;">
+        <div class="product-image" style="aspect-ratio: 1/1; background-color: #f5f5f5; overflow: hidden;">
+            <img 
+                src="${product.image}" 
+                alt="${product.name}" 
+                class="clickable-img" 
+                loading="lazy"
+                decoding="async"
+                style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+            >
         </div>
         <div class="product-info">
             <span class="seller-badge">${product.seller}</span>
